@@ -27,7 +27,8 @@
     "prepare": "pnpm run build",
     "lint": "pnpm run prettier:fix && pnpm run eslint",
     "release": "pnpm run build && changeset publish",
-    "release-canary": "pnpm run build && changeset version --snapshot && changeset publish --tag alpha"
+    "release-canary": "pnpm run build && changeset version --snapshot && changeset publish --tag alpha",
+    "preinstall": "node preinstall.js"
   },
   "files": [
     "dist/**"
